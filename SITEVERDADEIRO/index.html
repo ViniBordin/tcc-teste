@@ -1,0 +1,74 @@
+.<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Formadinho</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Chatbox</title>
+</head>
+
+
+<body>
+    <header>
+        <img src="./assets//logo.png" alt="Logo formandinho!!" width="50" align="left">
+    </header>
+    <main class="main">
+
+        <!-- Formulário de postagem -->
+        <div class="newPost">
+
+            <div class="infoUser">
+                <div class="imgUser">
+                </div>
+                <strong>Usuario</strong>
+            </div>
+
+            <form action="" class="formPost" id="formPost">
+                <textarea name="textarea" placeholder="Digite aqui!!" id="textarea"></textarea>
+                <div class="iconsAndButton">
+                    <div class="icons">
+                        <button class="btnFileForm">
+                            <img src="./assets/img.svg" alt="Adicionar uma imagem">
+                        </button>
+                        <button class="btnFileForm">
+                            <img src="./assets/gif.svg" alt="Adicionar um gif">
+                        </button>
+                        <button class="btnFileForm">
+                            <img src="./assets/video.svg" alt="Adicionar um vídeo">
+                        </button>
+                    </div>
+
+                    <button type="submit" id="botao" class="btnSubmitForm">Publicar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="BatePapo">
+                <a href="chat.html"><img src="./assets/comment.svg"></a>
+            </div>
+    
+            <div class="PerfilLegal">
+                <a href="index-css-perfil.html"><img src="./img/user.png"></a>
+            </div>
+
+        <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+            <img src="./search.png" id="btnBusca" alt="Buscar"/>
+        </div>
+        
+        <ul class="posts" id="posts"></ul>
+
+    </main>
+    <script type="module" src="/Controllers/Form/FormPost.js"></script>
+</body>
+
+</html>
